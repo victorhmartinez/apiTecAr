@@ -11,4 +11,10 @@ exports.listTecnologias=[
     icon:"https://cdn-icons-png.flaticon.com/512/806/806177.png",
     imageMalla:"https://sites.google.com/site/educacioniniciallizethvargasz/_/rsrc/1443929455205/malla-curricular/malla%20curricular.png"
 },
+{
+    idTecnologia:1223,
+    nameTecnologia:"Tecnología 3",
+    icon:"https://cdn-icons-png.flaticon.com/512/806/806177.png",
+    imageMalla:"https://sites.google.com/site/educacioniniciallizethvargasz/_/rsrc/1443929455205/malla-curricular/malla%20curricular.png"
+},
 ]
