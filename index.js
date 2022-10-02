@@ -1,9 +1,11 @@
 //Importamos express para crear nuestro server
 const express = require('express');
-// Modulo para poder interactuar con el body
-//const body_parser = require('body-parser');
+//Middleware
+var cors = require('cors')
 //servidor
 const app = express();
+//Activamos el middleware de cors
+app.use(cors())
 app.use(express.json());
 //app.use(body_parser.urlencoded({extended:true}));
 app.set('port',process.env.PORT || 3000);
