@@ -6,11 +6,11 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 //app.use(body_parser.urlencoded({extended:true}));
-
+app.set('port',process.env.PORT || 3000);
 //Rutas
 app.use('/tecnologias',require('./routes/TecnologiasRoute'))
 app.use('',require('./routes/TecnologiasRoute'))
   // iniciamos el  server
-app.listen(3000, () => {
-    console.log('listening on port 3000');
-  });
+  app.listen(app.get('port'),()=>{
+    console.log('Server on port '+app.get('port'));
+})
